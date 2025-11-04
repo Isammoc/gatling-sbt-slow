@@ -17,7 +17,7 @@ import scala.concurrent.duration._
 // Setting for the duration of the slow task (configurable as a FiniteDuration)
 val duration = settingKey[FiniteDuration]("Duration for the slow task (configurable via sbt 'set duration := X.seconds')")
 
-duration := 2.minutes // Default: 10 seconds
+duration := 10.minutes 
 
 // Definition of the custom slow task
 val slowTask = taskKey[Unit]("A slow SBT task with a visible progress counter")
